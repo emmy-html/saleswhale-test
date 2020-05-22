@@ -12,19 +12,20 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main.scss">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
   <header>
     <div class="content-wrapper">
-      <p>Logo</p>
+      <img src="img/logo.png" alt="Saleswhale logo"><h2 class="logo">Saleswhale</h2>
       <nav>
         <ul>
           <li><a href="#">Why Saleswhale?</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">Company</a></li>
           <li><a href="#" class="outline-button">Log In</a></li>
-          <li><a href="#" class="button">Get a Demo</a></li>
+          <li><a href="#" class="header-button">Get a Demo</a></li>
         </ul>
       </nav>
     </div>
@@ -34,7 +35,7 @@
     <section id="hero">
       <div class="content-wrapper">
         <article>
-          Hero Image
+          <div class="hero-image"></div>
         </article>
         <aside>
           <h1>A future where AI and humans work hand in hand</h1>
@@ -54,60 +55,68 @@
         <p>At Saleswhale, we encourage everyone to grow and innovate, while having fun in the process.</p>
           <div class="culture-content">
             <article>
-              <p>Image</p>
+              <p><img src="img/our-culture.png" alt="Anime girl"></p>
               <h2>Building for the future</h2>
               <p>We always challenge the status quo and work hard innovating on a product that not only works, but changes the game for our users.</p>
             </article>
             <article>
-              <p>Image</p>
+              <p><img src="img/our-culture.png" alt="Anime girl"></p>
               <h2>Promoting trust & transparency</h2>
               <p>We remain completely open, honest and transparent with everyone. This has allowed us to build strong relationships with each other.</p>
             </article>
             <article>
-              <p>Image</p>
+              <p><img src="img/our-culture.png" alt="Anime girl"></p>
               <h2>Achieving our very best</h2>
               <p>We believe the success of the company lies within our employees and we constantly challenge each other to learn and level up.</p>
             </article>
           </div>
         <p>If you are excited by our vision of the future, and want to solve meaningful problems, talk to us!</p>
-        <a href="#" class="button">Join the team</a>
+        <a href="#" class="culture-button">Join the team</a>
       </div>
     </section>
 
     <section id="our-progress">
+      <h1>Our Progress</h1>
+      <div class="timeline-background">
       <div class="content-wrapper">
-        <h1>Our Progress</h1>
           <article class="timeline">
-            <ol class="dates">
-            <li>2015</li>
-            <li>2016</li>
-            <li>2017</li>
-            <li>2018</li>
-            <li>2019</li>
-            <li>2020</li>
-            </ol>
-            <ol class="events">
-            <li>Founded in Singapore by Gabriel Lim, Ethan Le, and Venus Wong</li>
-            <li>Accepted into Y Combinator (S16) and moved to San Francisco</li>
-            <li>Raised US$1.2M in seed funding and hired core engineers</li>
-            <li>Raised US$5.3M in Series A and expanded team size</li>
-            <li>Opened US office in Washington, DC and hired US sales team</li>
-            </ol>
+            <aside class="dates">
+              <h4>2015</h4>
+              <h4>2016</h4>
+              <h4>2017</h4>
+              <h4>2019</h4>
+              <h4>2020</h4>
+            </aside>
+            <aside class="images">
+              <p><img src="./img/envelope.png" alt="Envelope"></p>
+              <p><img src="./img/envelope.png" alt="Envelope"></p>
+              <p><img src="./img/envelope.png" alt="Envelope"></p>
+              <p><img src="./img/envelope.png" alt="Envelope"></p>
+              <p><img src="./img/envelope.png" alt="Envelope"></p>
+            </aside>
+            <aside class="desc">
+              <p class="event">Founded in Singapore by Gabriel Lim, Ethan Le, and Venus Wong</p>
+              <p class="event">Accepted into Y Combinator (S16) and moved to San Francisco</p>
+              <p class="event">Raised US$1.2M in seed funding and hired core engineers</p>
+              <p class="event">Raised US$5.3M in Series A and expanded team size</p>
+              <p class="event">Opened US office in Washington, DC and hired US sales team</p>
+            </aside>
           </article>
+        </div>
       </div>
     </section>
 
-    <section id="our-offices">
+    <section id="offices">
       <div class="content-wrapper">
         <h1>Our Offices</h1>
         <article>
-          <p>Image</p>
+          <p><img src="img/offices.png" alt="Anime girl"></p>
           <h2>Singapore</h2>
           <p>155B Telok Ayer Street</p>
           <p>Singapore, 068611</p>
         </article>
         <article>
-          <p>Image</p>
+          <p><img src="img/offices.png" alt="Anime girl"></p>
           <h2>Washington DC</h2>
           <p>1701 Rhode Island Ave NW</p>
           <p>Washington, DC 20036</p>
@@ -115,20 +124,17 @@
       </div>
     </section>
     
-    <section id="our-investors">
+    <section id="investors">
       <div class="content-wrapper">
-        <article>
-          <p>Logo</p>
-        </article>
-        <article>
-          <p>Logo</p>
-        </article>
-        <article>
-          <p>Logo</p>
-        </article>
-        <article>
-          <p>Logo</p>
-        </article>
+        <h1>Our Investors</h1>
+          <article class="y-combinator">
+          </article>
+          <article class="mhv">
+          </article>
+          <article class="strive">
+          </article>
+          <article class="wavemaker">
+          </article>
       </div>
     </section>
 
@@ -137,6 +143,8 @@
         <h1>See the future</h1>
         <article>
           <a href="#" class="white-button">Get a demo</a>
+        </article>
+        <article>
           <a href="#" class="white-outline-button">Read use cases</a>
         </article>
       </div>
@@ -145,10 +153,10 @@
 
   <footer>
     <div class="content-wrapper">
-        <div class="main-footer-content">
-        <article>
-          <p>Logo <h4>saleswhale</h4></p>
-        </article>
+      <article>
+        <img src="img/logo.png" alt="Saleswhale logo"><h2 class="logo">Saleswhale</h2>
+      </article>
+        <div class="footer-content">
         <article>
           <h3>Why Saleswhale</h3>
           <p><a href="#">Collaborative Intelligence</a></p>
@@ -186,17 +194,20 @@
       </div>
       <div class="footer-social-media">
         <article>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">LinkedIn</a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </article>
         <article>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
+          <p><a href="#">Privacy</a></p>
+          <p><a href="#">Terms</a></p>
+        </article>
+        <article>
           <p>© 2020 Saleswhale, Inc. All rights reserved.</p>
         </article>
       </div>
     </div>
+    <div class="footer-bg-element"></div>
   </footer>
 
   <script src="js/plugins.js"></script>

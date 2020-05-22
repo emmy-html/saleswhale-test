@@ -94,10 +94,205 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* Mobile Styles */
+/* Fonts & Colors */
 
+/* Mixins */
+@mixin investors-background {
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mobile Layout */
+/* Universal Styles */
+.content-wrapper {
+    margin: 0px 25px;
+}
+h1 {
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+  margin-left: 10px;
+  text-transform: lowercase;
+}
 /* Header */
-
+header {
+    nav {
+        display: none;
+    }
+}
+/* Hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .hero-image {
+        background-image: url('../img/hero.png');
+        background-position: center;
+        background-size: cover;
+        height: 296px;
+        width: 100%;
+    }
+    h1 {
+      text-align: left;
+    }
+}
+/* Our Culture */
+#our-culture {
+    .content-wrapper {
+        margin-top: 100px;
+    }
+    .culture-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0px;
+        article {
+            margin-bottom: 35px;
+        }
+    }
+    .culture-button {
+        width: 100%;
+    }
+}
+/* Our Progress */
+#our-progress {
+  margin: 50px 0px;
+  .timeline-background {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: grey;
+    z-index: -100;
+  }
+  .timeline {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    .dates {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .images {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .images::after {
+      background: black;
+      content: " ";
+      height: 480px;
+      margin-left: 20px;
+      width: 5px;
+      position: absolute;
+      z-index: -20;
+    }
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 54%;
+    }
+    .event {
+      margin-bottom: 5px;
+    }
+  }
+}
+/* Our Offices */
+#offices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  article {
+    margin: 30px 25px;
+  }
+}
+/* Our Investors */
+#investors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  article {
+    background: white;
+    margin-bottom: 45px;
+    width: 205px;
+    height: 145px;
+    padding: 0px 30px;
+  }
+  .y-combinator {
+    @include investors-background;
+    background-image: url('../img/yc-logo.png');
+  }
+  .mhv {
+    @include investors-background;
+    background-image: url('../img/mhv-logo.png');
+  }
+  .strive {
+    @include investors-background;
+    background-image: url('../img/strive-logo.png');
+  }
+  .wavemaker {
+    @include investors-background;
+    background-image: url('../img/wavemaker-logo.png');
+  }
+}
+/* Demo */
+#demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  text-align: center;
+}
+/* Footer */
+footer {
+  .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+    article {
+      width: 48%;
+    }
+  }
+  .footer-social-media {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    i {
+    background: black;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  article {
+    padding-bottom: 20px;
+  }
+}
+.footer-bg-element {
+  background-image: url('../img/waves.png');
+  background-size: 260%;
+  background-position: 60% 30%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80px;
+}
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
