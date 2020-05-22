@@ -103,10 +103,10 @@ textarea {
   background-repeat: no-repeat;
 }
 
-/* Mobile Layout */
+/* Mobile Styles */
 /* Universal Styles */
 .content-wrapper {
-    margin: 0px 25px;
+  margin: 0px 25px;
 }
 h1 {
   text-align: center;
@@ -118,45 +118,45 @@ h1 {
 }
 /* Header */
 header {
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 }
 /* Hero */
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .hero-image {
-        background-image: url('../img/hero.png');
-        background-position: center;
-        background-size: cover;
-        height: 296px;
-        width: 100%;
-    }
-    h1 {
-      text-align: left;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .hero-image {
+    background-image: url("../img/hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+  }
+  h1 {
+    text-align: left;
+  }
 }
 /* Our Culture */
 #our-culture {
-    .content-wrapper {
-        margin-top: 100px;
+  .content-wrapper {
+    margin-top: 100px;
+  }
+  .culture-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+    article {
+      margin-bottom: 35px;
     }
-    .culture-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 25px 0px;
-        article {
-            margin-bottom: 35px;
-        }
-    }
-    .culture-button {
-        width: 100%;
-    }
+  }
+  .culture-button {
+    width: 100%;
+  }
 }
 /* Our Progress */
 #company-history {
@@ -218,19 +218,19 @@ header {
 #investors {
   .y-combinator {
     @include investors-background;
-    background-image: url('../img/yc-logo.png');
+    background-image: url("../img/yc-logo.png");
   }
   .mhv {
     @include investors-background;
-    background-image: url('../img/mhv-logo.png');
+    background-image: url("../img/mhv-logo.png");
   }
   .strive {
     @include investors-background;
-    background-image: url('../img/strive-logo.png');
+    background-image: url("../img/strive-logo.png");
   }
   .wavemaker {
     @include investors-background;
-    background-image: url('../img/wavemaker-logo.png');
+    background-image: url("../img/wavemaker-logo.png");
   }
   .investors-content {
     align-items: center;
@@ -257,10 +257,10 @@ header {
 /* Footer */
 footer {
   .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     article.footer-logo {
       width: 100%;
     }
@@ -272,19 +272,19 @@ footer {
     }
   }
   .footer-social-media {
-  margin: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 30px;
-  text-align: center;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
     i {
-    background: black;
-    border-radius: 15px;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+      background: black;
+      border-radius: 15px;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
     }
   }
   .copyright {
@@ -292,23 +292,23 @@ footer {
     text-align: center;
   }
   .footer-bg-element {
-  background-image: url('../img/waves.png');
-  background-size: cover;
-  background-position: 60% 30%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 85px;
+    background-image: url("../img/waves.png");
+    background-size: cover;
+    background-position: 60% 30%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75px;
   }
 }
 /* Tablet Styles */
 @media (min-width: 768px) {
   /* Universal Styles */
   .content-wrapper {
-    margin: 0px 75px;
+    margin: 0px 65px;
   }
   /* Hero */
-    #hero { 
-      .hero-content { 
+  #hero {
+    .hero-content {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -357,14 +357,14 @@ footer {
       }
     }
   }
-    /* Offices */
+  /* Offices */
   #offices {
     margin: 100px 0px;
-  .content-wrapper {
-    width: 80%;
-  }
-  h1 {
-    padding-bottom: 60px;
+    .content-wrapper {
+      width: 80%;
+    }
+    h1 {
+      padding-bottom: 60px;
     }
     .office-locations {
       display: flex;
@@ -375,14 +375,14 @@ footer {
         width: 100%;
       }
     }
-  } 
+  }
   /* Investors */
   #investors {
     width: 100%;
     .investors-content {
       flex-flow: row wrap;
       justify-content: space-around;
-      width: 95%;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -434,13 +434,95 @@ footer {
     .copyright {
       text-align: left;
     }
+    .footer-bg-element {
+      height: 90px;
+    }
+  }
+}
+/* Desktop Styles */
+@media (min-width: 1440px) {
+  /* Universal Styles */
+  .content-wrapper {
+    margin: 0 115px;
+  }
+  /* Header */
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-bottom: 95px;
+    nav {
+      display: inline-block;
+      margin: 10px 0px;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          margin-left: 55px;
+        }
+      }
+      .nav-buttons {
+        display: inline-block;
+        margin-left: 150px;
+      }
+    }
+  }
+  /* Hero */
+  #hero {
+    .hero-content {
+      .heading {
+        width: 35%;
+      }
+      article {
+        width: 45%;
+      }
+    }
+  }
+  /* Timeline */
+  #company-history {
+    padding-top: 50px;
+    .timeline {
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+  /* Locations */
+  /* Investors */
+  #investors {
+    width: 100%;
+    .investors-content {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+  /* Footer */
+  footer {
+    .footer-content {
+      article {
+        width: 15%;
+      }
+      .divider {
+        display: none;
+      }
+    }
+    .footer-social-media {
+      .social-icons {
+        width: 12%;
+      }
+      .privacy-policy {
+        width: 10%;
+      }
+    }
+    .footer-bg-element {
+      height: 140px;
+    }
   }
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
- 
+
 /*
  * Hide visually and from screen readers
  */
@@ -601,4 +683,3 @@ footer {
     page-break-after: avoid;
   }
 }
-

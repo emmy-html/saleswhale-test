@@ -79,7 +79,7 @@ textarea {
 
 /* Fonts & Colors */
 /* Mixins */
-/* Mobile Layout */
+/* Mobile Styles */
 /* Universal Styles */
 .content-wrapper {
   margin: 0px 25px; }
@@ -106,7 +106,7 @@ header nav {
     background-image: url("../img/hero.png");
     background-position: center;
     background-size: cover;
-    height: 296px;
+    height: 300px;
     width: 100%; }
   #hero h1 {
     text-align: left; }
@@ -249,13 +249,13 @@ footer .footer-bg-element {
   background-position: 60% 30%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 85px; }
+  height: 75px; }
 
 /* Tablet Styles */
 @media (min-width: 768px) {
   /* Universal Styles */
   .content-wrapper {
-    margin: 0px 75px; }
+    margin: 0px 65px; }
 
   /* Hero */
   #hero .hero-content {
@@ -319,7 +319,7 @@ footer .footer-bg-element {
     #investors .investors-content {
       flex-flow: row wrap;
       justify-content: space-around;
-      width: 95%;
+      width: 100%;
       margin: 0 auto; }
 
   /* Demo */
@@ -356,7 +356,65 @@ footer .footer-bg-element {
       justify-content: space-between;
       width: 20%; }
   footer .copyright {
-    text-align: left; } }
+    text-align: left; }
+  footer .footer-bg-element {
+    height: 90px; } }
+/* Desktop Styles */
+@media (min-width: 1440px) {
+  /* Universal Styles */
+  .content-wrapper {
+    margin: 0 115px; }
+
+  /* Header */
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-bottom: 95px; }
+    header .content-wrapper nav {
+      display: inline-block;
+      margin: 10px 0px; }
+      header .content-wrapper nav ul {
+        list-style: none; }
+        header .content-wrapper nav ul li {
+          display: inline-block;
+          margin-left: 55px; }
+      header .content-wrapper nav .nav-buttons {
+        display: inline-block;
+        margin-left: 150px; }
+
+  /* Hero */
+  #hero .hero-content .heading {
+    width: 35%; }
+  #hero .hero-content article {
+    width: 45%; }
+
+  /* Timeline */
+  #company-history {
+    padding-top: 50px; }
+    #company-history .timeline {
+      margin: 0 auto;
+      width: 60%; }
+
+  /* Locations */
+  /* Investors */
+  #investors {
+    width: 100%; }
+    #investors .investors-content {
+      width: 60%;
+      margin: 0 auto; }
+
+  /* Footer */
+  footer .footer-content article {
+    width: 15%; }
+  footer .footer-content .divider {
+    display: none; }
+  footer .footer-social-media .social-icons {
+    width: 12%; }
+  footer .footer-social-media .privacy-policy {
+    width: 10%; }
+  footer .footer-bg-element {
+    height: 140px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
