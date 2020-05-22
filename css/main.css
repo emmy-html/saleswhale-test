@@ -126,28 +126,28 @@ header nav {
   width: 100%; }
 
 /* Our Progress */
-#our-progress {
+#company-history {
   margin: 50px 0px; }
-  #our-progress .timeline-background {
+  #company-history .timeline-background {
     position: relative;
     width: 100%;
     height: 480px;
     background: grey;
     z-index: -100; }
-  #our-progress .timeline {
+  #company-history .timeline {
     margin: 50px 0px;
     display: flex;
     justify-content: space-between;
     align-content: center; }
-    #our-progress .timeline .dates {
+    #company-history .timeline .dates {
       display: flex;
       flex-direction: column;
       justify-content: space-around; }
-    #our-progress .timeline .images {
+    #company-history .timeline .images {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
-    #our-progress .timeline .images::after {
+    #company-history .timeline .images::after {
       background: black;
       content: " ";
       height: 480px;
@@ -155,12 +155,12 @@ header nav {
       width: 5px;
       position: absolute;
       z-index: -20; }
-    #our-progress .timeline .desc {
+    #company-history .timeline .desc {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       width: 54%; }
-    #our-progress .timeline .event {
+    #company-history .timeline .event {
       margin-bottom: 5px; }
 
 /* Our Offices */
@@ -169,44 +169,41 @@ header nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
   #offices article {
     margin: 30px 25px; }
 
 /* Our Investors */
-#investors {
+#investors .y-combinator {
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/yc-logo.png"); }
+#investors .mhv {
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/mhv-logo.png"); }
+#investors .strive {
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/strive-logo.png"); }
+#investors .wavemaker {
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/wavemaker-logo.png"); }
+#investors .investors-content {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  #investors article {
-    background: white;
-    margin-bottom: 45px;
-    width: 205px;
-    height: 145px;
-    padding: 0px 30px; }
-  #investors .y-combinator {
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/yc-logo.png"); }
-  #investors .mhv {
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/mhv-logo.png"); }
-  #investors .strive {
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/strive-logo.png"); }
-  #investors .wavemaker {
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/wavemaker-logo.png"); }
+  padding-top: 40px; }
+#investors article {
+  margin-bottom: 45px;
+  width: 205px;
+  height: 145px;
+  padding: 0px 30px; }
 
 /* Demo */
 #demo {
@@ -223,14 +220,19 @@ footer .footer-content {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap; }
+  footer .footer-content article.footer-logo {
+    width: 100%; }
   footer .footer-content article {
     width: 48%; }
+  footer .footer-content .divider {
+    display: none; }
 footer .footer-social-media {
-  margin: 40px 0px;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 30px;
   text-align: center; }
   footer .footer-social-media i {
     background: black;
@@ -238,16 +240,123 @@ footer .footer-social-media {
     width: 20px;
     height: 20px;
     padding: 5px; }
-  footer .footer-social-media article {
-    padding-bottom: 20px; }
+footer .copyright {
+  padding-bottom: 30px;
+  text-align: center; }
 footer .footer-bg-element {
   background-image: url("../img/waves.png");
-  background-size: 260%;
+  background-size: cover;
   background-position: 60% 30%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80px; }
+  height: 85px; }
 
+/* Tablet Styles */
+@media (min-width: 768px) {
+  /* Universal Styles */
+  .content-wrapper {
+    margin: 0px 75px; }
+
+  /* Hero */
+  #hero .hero-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
+    #hero .hero-content article {
+      padding-top: 45px;
+      width: 46%; }
+
+  /* Our Culture */
+  #our-culture {
+    width: 100%; }
+    #our-culture p.culture-desc {
+      margin: 0 auto;
+      text-align: center;
+      width: 65%; }
+    #our-culture .culture-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%; }
+      #our-culture .culture-content article {
+        width: 30%; }
+    #our-culture .culture-button {
+      margin-top: 35px;
+      text-align: center;
+      width: 100%; }
+      #our-culture .culture-button a {
+        padding: 15px 35px; }
+
+  /* Company History */
+  #company-history {
+    margin: 0px 75px; }
+    #company-history .timeline {
+      justify-content: space-between;
+      margin: 50px 30px; }
+      #company-history .timeline .desc {
+        width: 70%; }
+
+  /* Offices */
+  #offices {
+    margin: 100px 0px; }
+    #offices .content-wrapper {
+      width: 80%; }
+    #offices h1 {
+      padding-bottom: 60px; }
+    #offices .office-locations {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center; }
+      #offices .office-locations article {
+        width: 100%; }
+
+  /* Investors */
+  #investors {
+    width: 100%; }
+    #investors .investors-content {
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 95%;
+      margin: 0 auto; }
+
+  /* Demo */
+  #demo {
+    padding: 130px 0px; }
+    #demo .demo-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+    #demo .white-button {
+      padding: 20px 70px;
+      margin: 0px 20px; }
+    #demo .white-outline-button {
+      padding: 20px 70px;
+      margin: 0px 20px; }
+
+  /* Footer */
+  footer .footer-content article.footer-logo {
+    width: 30%; }
+  footer .footer-content article {
+    width: 29%; }
+  footer .footer-content .divider {
+    display: inline; }
+  footer .footer-social-media {
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between; }
+    footer .footer-social-media .social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 20%; }
+    footer .footer-social-media .privacy-policy {
+      display: flex;
+      justify-content: space-between;
+      width: 20%; }
+  footer .copyright {
+    text-align: left; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

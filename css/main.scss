@@ -159,7 +159,7 @@ header {
     }
 }
 /* Our Progress */
-#our-progress {
+#company-history {
   margin: 50px 0px;
   .timeline-background {
     position: relative;
@@ -210,25 +210,12 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
   article {
     margin: 30px 25px;
   }
 }
 /* Our Investors */
 #investors {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  article {
-    background: white;
-    margin-bottom: 45px;
-    width: 205px;
-    height: 145px;
-    padding: 0px 30px;
-  }
   .y-combinator {
     @include investors-background;
     background-image: url('../img/yc-logo.png');
@@ -244,6 +231,18 @@ header {
   .wavemaker {
     @include investors-background;
     background-image: url('../img/wavemaker-logo.png');
+  }
+  .investors-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  article {
+    margin-bottom: 45px;
+    width: 205px;
+    height: 145px;
+    padding: 0px 30px;
   }
 }
 /* Demo */
@@ -262,41 +261,186 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+    article.footer-logo {
+      width: 100%;
+    }
     article {
       width: 48%;
     }
+    .divider {
+      display: none;
+    }
   }
   .footer-social-media {
-    margin: 40px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
     i {
     background: black;
     border-radius: 15px;
     width: 20px;
     height: 20px;
     padding: 5px;
+    }
   }
-  article {
-    padding-bottom: 20px;
+  .copyright {
+    padding-bottom: 30px;
+    text-align: center;
   }
-}
-.footer-bg-element {
+  .footer-bg-element {
   background-image: url('../img/waves.png');
-  background-size: 260%;
+  background-size: cover;
   background-position: 60% 30%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80px;
+  height: 85px;
+  }
 }
+/* Tablet Styles */
+@media (min-width: 768px) {
+  /* Universal Styles */
+  .content-wrapper {
+    margin: 0px 75px;
+  }
+  /* Hero */
+    #hero { 
+      .hero-content { 
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      article {
+        padding-top: 45px;
+        width: 46%;
+      }
+    }
+  }
+  /* Our Culture */
+  #our-culture {
+    width: 100%;
+    p.culture-desc {
+      margin: 0 auto;
+      text-align: center;
+      width: 65%;
+    }
+    .culture-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      article {
+        width: 30%;
+      }
+    }
+    .culture-button {
+      margin-top: 35px;
+      text-align: center;
+      width: 100%;
+      a {
+        padding: 15px 35px;
+      }
+    }
+  }
+  /* Company History */
+  #company-history {
+    margin: 0px 75px;
+    .timeline {
+      justify-content: space-between;
+      margin: 50px 30px;
+      .desc {
+        width: 70%;
+      }
+    }
+  }
+    /* Offices */
+  #offices {
+    margin: 100px 0px;
+  .content-wrapper {
+    width: 80%;
+  }
+  h1 {
+    padding-bottom: 60px;
+    }
+    .office-locations {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      article {
+        width: 100%;
+      }
+    }
+  } 
+  /* Investors */
+  #investors {
+    width: 100%;
+    .investors-content {
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  /* Demo */
+  #demo {
+    padding: 130px 0px;
+    .demo-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .white-button {
+      padding: 20px 70px;
+      margin: 0px 20px;
+    }
+    .white-outline-button {
+      padding: 20px 70px;
+      margin: 0px 20px;
+    }
+  }
+  /* Footer */
+  footer {
+    .footer-content {
+      article.footer-logo {
+        width: 30%;
+      }
+      article {
+        width: 29%;
+      }
+      .divider {
+        display: inline;
+      }
+    }
+    .footer-social-media {
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      .social-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+      }
+      .privacy-policy {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+      }
+    }
+    .copyright {
+      text-align: left;
+    }
+  }
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+ 
 /*
  * Hide visually and from screen readers
  */
