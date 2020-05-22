@@ -96,13 +96,6 @@ textarea {
 
 /* Fonts & Colors */
 
-/* Mixins */
-@mixin investors-background {
-  background-size: 90%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /* Mobile Styles */
 /* Universal Styles */
 .content-wrapper {
@@ -205,44 +198,40 @@ header {
 }
 /* Our Offices */
 #offices {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  article {
-    margin: 30px 25px;
+  .office-locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    article {
+      background: red;
+      width: 100%;
+      height: 220px;
+      margin: 20px 0px;
+    }
   }
 }
 /* Our Investors */
 #investors {
-  .y-combinator {
-    @include investors-background;
-    background-image: url("../img/yc-logo.png");
-  }
-  .mhv {
-    @include investors-background;
-    background-image: url("../img/mhv-logo.png");
-  }
-  .strive {
-    @include investors-background;
-    background-image: url("../img/strive-logo.png");
-  }
-  .wavemaker {
-    @include investors-background;
-    background-image: url("../img/wavemaker-logo.png");
-  }
   .investors-content {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-  }
-  article {
-    margin-bottom: 45px;
-    width: 205px;
-    height: 145px;
-    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    article {
+      background: red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 45px;
+      width: 100%;
+      height: 145px;
+      img {
+        margin: 0 auto;
+      }
+    }
   }
 }
 /* Demo */
@@ -334,7 +323,7 @@ footer {
       align-items: flex-start;
       width: 100%;
       article {
-        width: 30%;
+        width: 28%;
       }
     }
     .culture-button {
@@ -360,30 +349,28 @@ footer {
   /* Offices */
   #offices {
     margin: 100px 0px;
-    .content-wrapper {
-      width: 80%;
-    }
     h1 {
       padding-bottom: 60px;
     }
     .office-locations {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      text-align: center;
+      justify-content: space-around;
+      width: 100%;
       article {
-        width: 100%;
+        width: 42%;
       }
     }
   }
   /* Investors */
   #investors {
-    width: 100%;
     .investors-content {
       flex-flow: row wrap;
       justify-content: space-around;
       width: 100%;
-      margin: 0 auto;
+      article {
+        width: 42%;
+      }
     }
   }
   /* Demo */
@@ -486,15 +473,26 @@ footer {
       width: 60%;
     }
   }
-  /* Locations */
-  /* Investors */
-  #investors {
-    width: 100%;
-    .investors-content {
-      width: 60%;
-      margin: 0 auto;
-    }
-  }
+ /* Offices */
+ #offices {
+   .office-locations {
+    justify-content: space-evenly;
+    article {
+       width: 37%;
+     }
+   }
+ }
+ /* Investors */
+ #investors {
+   .investors-content {
+     justify-content: space-evenly;
+     padding-top: 100px;
+     article {
+       margin-bottom: 70px;
+       width: 37%;
+     }
+   }
+ }
   /* Footer */
   footer {
     .footer-content {
