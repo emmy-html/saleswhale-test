@@ -341,7 +341,7 @@ footer .footer-social-media {
     content: ' ';
     background: #F4F4F4;
     width: 100%;
-    height: 350px;
+    height: 320px;
     margin-top: 60px;
     padding: 0;
     z-index: -100; }
@@ -395,6 +395,8 @@ footer .footer-bg-element {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start; }
+    #hero .hero-content .heading {
+      width: 260px; }
     #hero .hero-content article {
       padding-top: 45px;
       width: 46%; }
@@ -475,27 +477,33 @@ footer .footer-bg-element {
       margin: 0px 20px; }
 
   /* Footer */
-  footer .footer-content article.footer-logo {
-    width: 30%; }
-  footer .footer-content article {
-    width: 29%; }
-  footer .footer-content .divider {
-    display: inline; }
-  footer .footer-social-media {
-    flex-flow: row-reverse nowrap;
-    justify-content: space-between; }
-    footer .footer-social-media .social-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 20%; }
-    footer .footer-social-media .privacy-policy {
-      display: flex;
-      justify-content: space-between;
-      width: 20%; }
-  footer .copyright {
-    text-align: left; }
-  footer .footer-bg-element {
-    height: 90px; } }
+  footer {
+    padding-top: 75px; }
+    footer .footer-content article.footer-logo {
+      width: 30%; }
+    footer .footer-content article {
+      width: 29%; }
+    footer .footer-content .divider {
+      display: inline; }
+    footer .footer-social-media {
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between; }
+      footer .footer-social-media::before {
+        width: 100%;
+        height: 225px;
+        margin-left: 64px; }
+      footer .footer-social-media .social-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 20%; }
+      footer .footer-social-media .privacy-policy {
+        display: flex;
+        justify-content: space-between;
+        width: 20%; }
+    footer .copyright {
+      text-align: left; }
+    footer .footer-bg-element {
+      height: 120px; } }
 /* Desktop Styles */
 @media (min-width: 1440px) {
   /* Universal Styles */
@@ -521,8 +529,6 @@ footer .footer-bg-element {
         margin-left: 150px; }
 
   /* Hero */
-  #hero .hero-content .heading {
-    width: 35%; }
   #hero .hero-content article {
     width: 45%; }
 
