@@ -1,27 +1,27 @@
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+Base styles: opinionated defaults
+========================================================================== */
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4; }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -31,8 +31,8 @@ html {
   text-shadow: none; }
 
 /*
- * A better looking default horizontal rule
- */
+* A better looking default horizontal rule
+*/
 hr {
   display: block;
   height: 1px;
@@ -42,10 +42,10 @@ hr {
   padding: 0; }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
 audio,
 canvas,
 iframe,
@@ -55,22 +55,22 @@ video {
   vertical-align: middle; }
 
 /*
- * Remove default fieldset styles.
- */
+* Remove default fieldset styles.
+*/
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+* Allow only vertical resizing of textareas.
+*/
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -94,15 +94,18 @@ a {
   text-decoration: none; }
 
 h1 {
+  font-size: 2rem;
   line-height: 2rem;
   text-align: center; }
 
+p {
+  line-height: 1.5rem; }
+
 .logo {
-  display: inline-block;
-  padding-bottom: 15px;
-  text-transform: lowercase; }
-  .logo h2 {
-    margin-left: 10px; }
+  padding: 20px 0px 40px 0px; }
+  .logo img {
+    width: 130px;
+    height: auto; }
 
 /* Header */
 header nav {
@@ -126,8 +129,9 @@ header nav {
 /* Our Culture */
 #our-culture .content-wrapper {
   margin-top: 75px; }
-#our-culture p {
-  color: #537089; }
+#our-culture h2 {
+  font-size: 1rem;
+  line-height: 1.5rem; }
 #our-culture .culture-content {
   display: flex;
   flex-direction: column;
@@ -136,6 +140,8 @@ header nav {
   margin: 25px 0px; }
   #our-culture .culture-content article {
     margin-bottom: 15px; }
+  #our-culture .culture-content p {
+    color: #537089; }
 #our-culture .culture-desc {
   padding-bottom: 15px; }
 #our-culture .culture-button {
@@ -215,6 +221,7 @@ header nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 75px;
     text-align: center;
     width: 100%; }
     #offices .office-locations article {
@@ -226,6 +233,8 @@ header nav {
       margin: 20px 0px;
       padding-top: 20px;
       width: 100%; }
+      #offices .office-locations article h2 {
+        font-size: 1.625rem; }
 
 /* Our Investors */
 #investors {
@@ -234,7 +243,8 @@ header nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-top: 40px; }
     #investors .investors-content article {
       background: white;
       border-radius: 5px;
@@ -315,11 +325,14 @@ footer .footer-content {
   line-height: 1.2rem;
   padding-bottom: 30px; }
   footer .footer-content article.footer-logo {
+    padding-bottom: 40px;
     width: 100%; }
-    footer .footer-content article.footer-logo .logo {
-      margin-left: 10px; }
+    footer .footer-content article.footer-logo img {
+      width: 130px; }
   footer .footer-content h3 {
     font-size: 1rem; }
+  footer .footer-content p {
+    line-height: 1rem; }
   footer .footer-content article {
     width: 47%; }
   footer .footer-content a:link,
@@ -390,6 +403,13 @@ footer .footer-bg-element {
   .content-wrapper {
     margin: 0px 65px; }
 
+  /* Header */
+  .logo {
+    padding: 25px 0px 50px 0px; }
+    .logo img {
+      width: 160px;
+      height: auto; }
+
   /* Hero */
   #hero .hero-content {
     display: flex;
@@ -409,14 +429,14 @@ footer .footer-bg-element {
     #our-culture p.culture-desc {
       margin: 0 auto;
       text-align: center;
-      width: 65%; }
+      width: 60%; }
     #our-culture .culture-content {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
       width: 100%; }
       #our-culture .culture-content article {
-        width: 28%; }
+        width: 29%; }
     #our-culture .culture-button {
       margin: 0 auto;
       margin-top: 35px;
@@ -438,6 +458,8 @@ footer .footer-bg-element {
   /* Offices */
   #offices {
     margin: 100px 0px; }
+    #offices::before {
+      top: 90px; }
     #offices h1 {
       padding-top: 40px;
       padding-bottom: 60px; }
@@ -450,12 +472,14 @@ footer .footer-bg-element {
         width: 42%; }
 
   /* Investors */
-  #investors .investors-content {
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 100%; }
-    #investors .investors-content article {
-      width: 42%; }
+  #investors {
+    padding-bottom: 0; }
+    #investors .investors-content {
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 100%; }
+      #investors .investors-content article {
+        width: 42%; }
 
   /* Demo */
   #demo {
@@ -463,7 +487,7 @@ footer .footer-bg-element {
     justify-content: space-around;
     align-items: center;
     margin: 0px 25px;
-    height: 195px;
+    height: 215px;
     padding-bottom: 30px; }
     #demo::before {
       display: none; }
@@ -482,12 +506,14 @@ footer .footer-bg-element {
   /* Footer */
   footer {
     padding-top: 75px; }
-    footer .footer-content article.footer-logo {
-      width: 30%; }
-    footer .footer-content article {
-      width: 29%; }
-    footer .footer-content .divider {
-      display: inline; }
+    footer .footer-content {
+      align-items: baseline; }
+      footer .footer-content article.footer-logo {
+        width: 30%; }
+      footer .footer-content article {
+        width: 29%; }
+      footer .footer-content .divider {
+        display: inline; }
     footer .footer-social-media {
       flex-flow: row-reverse nowrap;
       justify-content: space-between; }
@@ -517,9 +543,13 @@ footer .footer-bg-element {
   header .content-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-flow: row nowrap;
-    padding-top: 35px;
-    padding-bottom: 95px; }
+    align-items: baseline;
+    flex-flow: row nowrap; }
+    header .content-wrapper .logo {
+      padding: 40px 0px 90px 0px; }
+      header .content-wrapper .logo img {
+        width: 190px;
+        height: auto; }
     header .content-wrapper nav {
       display: inline-block;
       margin: 10px 0px; }
@@ -570,6 +600,8 @@ footer .footer-bg-element {
           color: #0688fa; }
 
   /* Hero */
+  #hero .content-wrapper aside .hero-image {
+    border-radius: 5px; }
   #hero .hero-content .heading {
     padding: 0;
     width: 40%; }
@@ -582,7 +614,9 @@ footer .footer-bg-element {
 
   /* Our Culture */
   #our-culture {
-    padding-top: 100px; }
+    padding-top: 75px; }
+    #our-culture .culture-content article {
+      width: 27%; }
 
   /* Timeline */
   #company-history .timeline {
@@ -591,24 +625,27 @@ footer .footer-bg-element {
 
   /* Offices */
   #offices .office-locations {
+    padding-bottom: 50px;
     justify-content: space-evenly; }
     #offices .office-locations article {
       width: 37%; }
 
   /* Investors */
   #investors .investors-content {
-    justify-content: space-evenly;
-    padding-top: 100px; }
+    justify-content: space-evenly; }
     #investors .investors-content article {
       margin-bottom: 70px;
       height: 200px;
       width: 37%; }
 
   /* Demo */
-  #demo .white-button {
-    padding: 10px 90px; }
-  #demo .white-outline-button {
-    padding: 10px 90px; }
+  #demo {
+    height: 400px;
+    margin: 0px 65px; }
+    #demo .white-button {
+      padding: 10px 90px; }
+    #demo .white-outline-button {
+      padding: 10px 90px; }
 
   /* Footer */
   footer .footer-content article {
@@ -625,11 +662,11 @@ footer .footer-bg-element {
   footer .footer-bg-element {
     height: 140px; } }
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 /*
- * Hide visually and from screen readers
- */
+* Hide visually and from screen readers
+*/
 .hidden {
   display: none !important; }
 
@@ -696,19 +733,19 @@ footer .footer-bg-element {
   clear: both; }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
 @media print {
   *,
   *:before,
@@ -726,9 +763,9 @@ footer .footer-bg-element {
     content: " (" attr(title) ")"; }
 
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
@@ -742,9 +779,9 @@ footer .footer-bg-element {
     page-break-inside: avoid; }
 
   /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+* Printing Tables:
+* https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
   thead {
     display: table-header-group; }
 

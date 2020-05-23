@@ -2,14 +2,14 @@
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+Base styles: opinionated defaults
+========================================================================== */
 
 html {
   color: #222;
@@ -18,14 +18,14 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +38,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+* A better looking default horizontal rule
+*/
 
 hr {
   display: block;
@@ -51,10 +51,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
 
 audio,
 canvas,
@@ -66,8 +66,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+* Remove default fieldset styles.
+*/
 
 fieldset {
   border: 0;
@@ -76,16 +76,16 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+* Allow only vertical resizing of textareas.
+*/
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -129,15 +129,18 @@ a {
   text-decoration: none;
 }
 h1 {
+  font-size: 2rem;
   line-height: 2rem;
   text-align: center;
 }
+p {
+  line-height: 1.5rem;
+}
 .logo {
-  display: inline-block;
-  padding-bottom: 15px;
-  text-transform: lowercase;
-  h2 {
-    margin-left: 10px;
+  padding: 20px 0px 40px 0px;
+  img {
+    width: 130px;
+    height: auto;
   }
 }
 /* Header */
@@ -168,8 +171,9 @@ header {
   .content-wrapper {
     margin-top: 75px;
   }
-  p {
-    color: $duck-egg-grey;
+  h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .culture-content {
     display: flex;
@@ -179,6 +183,9 @@ header {
     margin: 25px 0px;
     article {
       margin-bottom: 15px;
+    }
+    p {
+      color: $duck-egg-grey;
     }
   }
   .culture-desc {
@@ -273,6 +280,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 75px;
     text-align: center;
     width: 100%;
     article {
@@ -284,6 +292,9 @@ header {
       margin: 20px 0px;
       padding-top: 20px;
       width: 100%;
+      h2 {
+        font-size: 1.625rem;
+      }
     }
   }
 }
@@ -295,6 +306,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
     article {
       background: white;
       border-radius: $radius;
@@ -391,13 +403,17 @@ footer {
     line-height: 1.2rem;
     padding-bottom: 30px;
     article.footer-logo {
+      padding-bottom: 40px;
       width: 100%;
-      .logo {
-        margin-left: 10px;
+      img {
+        width: 130px;
       }
     }
     h3 {
       font-size: 1rem;
+    }
+    p {
+      line-height: 1rem;
     }
     article {
       width: 47%;
@@ -486,6 +502,14 @@ footer {
   .content-wrapper {
     margin: 0px 65px;
   }
+  /* Header */
+  .logo {
+    padding: 25px 0px 50px 0px;
+    img {
+      width: 160px;
+      height: auto;
+    }
+  }
   /* Hero */
   #hero {
     .hero-content {
@@ -509,7 +533,7 @@ footer {
     p.culture-desc {
       margin: 0 auto;
       text-align: center;
-      width: 65%;
+      width: 60%;
     }
     .culture-content {
       flex-direction: row;
@@ -517,7 +541,7 @@ footer {
       align-items: flex-start;
       width: 100%;
       article {
-        width: 28%;
+        width: 29%;
       }
     }
     .culture-button {
@@ -545,6 +569,9 @@ footer {
   /* Offices */
   #offices {
     margin: 100px 0px;
+    &::before {
+      top: 90px; 
+    }
     h1 {
       padding-top: 40px;
       padding-bottom: 60px;
@@ -561,6 +588,7 @@ footer {
   }
   /* Investors */
   #investors {
+    padding-bottom: 0;
     .investors-content {
       flex-flow: row wrap;
       justify-content: space-around;
@@ -576,7 +604,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: 0px 25px;
-    height: 195px;
+    height: 215px;
     padding-bottom: 30px;
     &::before {
       display: none;
@@ -600,6 +628,7 @@ footer {
   footer {
     padding-top: 75px;
     .footer-content {
+      align-items: baseline;
       article.footer-logo {
         width: 30%;
       }
@@ -647,9 +676,15 @@ footer {
   header .content-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     flex-flow: row nowrap;
-    padding-top: 35px;
-    padding-bottom: 95px;
+    .logo {
+      padding: 40px 0px 90px 0px;
+      img {
+        width: 190px;
+        height: auto;
+      }
+    }
     nav {
       display: inline-block;
       margin: 10px 0px;
@@ -715,6 +750,11 @@ footer {
   }
   /* Hero */
   #hero {
+    .content-wrapper {
+      aside .hero-image {
+        border-radius: $radius;
+      }
+    }
     .hero-content {
       .heading {
         padding: 0;
@@ -732,7 +772,12 @@ footer {
   }
   /* Our Culture */
   #our-culture {
-    padding-top: 100px;
+    padding-top: 75px;
+    .culture-content {
+      article {
+        width: 27%;
+      }
+    }
   }
   /* Timeline */
   #company-history {
@@ -744,6 +789,7 @@ footer {
   /* Offices */
   #offices {
     .office-locations {
+      padding-bottom: 50px;
       justify-content: space-evenly;
       article {
         width: 37%;
@@ -754,7 +800,6 @@ footer {
   #investors {
     .investors-content {
       justify-content: space-evenly;
-      padding-top: 100px;
       article {
         margin-bottom: 70px;
         height: 200px;
@@ -764,6 +809,8 @@ footer {
   }
   /* Demo */
   #demo {
+    height: 400px;
+    margin: 0px 65px;
     .white-button {
       padding: 10px 90px;
     }
@@ -800,12 +847,12 @@ footer {
 }
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+Helper classes
+========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+* Hide visually and from screen readers
+*/
 
 .hidden {
   display: none !important;
@@ -883,10 +930,10 @@ footer {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -900,10 +947,10 @@ footer {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
 
 @media print {
   *,
@@ -922,9 +969,9 @@ footer {
     content: " (" attr(title) ")";
   }
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -938,9 +985,9 @@ footer {
     page-break-inside: avoid;
   }
   /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+* Printing Tables:
+* https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
   thead {
     display: table-header-group;
   }
