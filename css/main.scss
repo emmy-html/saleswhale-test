@@ -359,10 +359,11 @@ header {
       background: none;
       box-shadow: $dark-shadow;
       color: white;
-      transition: 2s background, 1s color;
+      transition: 2s background;
     }
     a:hover {
       color: white;
+      transition: 1s color;
     }
   }
   .white-outline-button {
@@ -378,10 +379,11 @@ header {
     &:hover {
       background: white;
       box-shadow: $dark-shadow;
-      transition: 2s background, 1s color;
+      transition: 2s background;
     }
     a:hover {
       color: $sw-blue !important;
+      transition: 1s color;
     }
   }
 }
@@ -453,7 +455,7 @@ footer {
     }
     i:hover {
       background: black;
-      transition: 1s background, 1s color;
+      transition: 1s background;
     }
     .fa-facebook-f {
       background: $facebook;

@@ -291,9 +291,10 @@ header .logo {
       background: none;
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
       color: white;
-      transition: 2s background, 1s color; }
+      transition: 2s background; }
     #demo .white-button a:hover {
-      color: white; }
+      color: white;
+      transition: 1s color; }
   #demo .white-outline-button {
     background: none;
     border: 1px solid white;
@@ -306,9 +307,10 @@ header .logo {
     #demo .white-outline-button:hover {
       background: white;
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-      transition: 2s background, 1s color; }
+      transition: 2s background; }
     #demo .white-outline-button a:hover {
-      color: #329dfa !important; }
+      color: #329dfa !important;
+      transition: 1s color; }
 
 /* Footer */
 footer .footer-content {
@@ -366,7 +368,7 @@ footer .footer-social-media {
     width: 25px; }
   footer .footer-social-media i:hover {
     background: black;
-    transition: 1s background, 1s color; }
+    transition: 1s background; }
   footer .footer-social-media .fa-facebook-f {
     background: #35589d; }
   footer .footer-social-media .fa-twitter {
