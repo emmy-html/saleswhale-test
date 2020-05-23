@@ -104,12 +104,9 @@ $duck-egg-grey: #537089;
 $facebook: #35589d;
 $grey: #f4f4f4;
 $light-blue: #eff8ff;
-$light-peach: #fff5f5;
 $linkedin: #337bb1;
 $primary-blue: #0688fa;
-$soft-blue: #96cbfa;
 $sw-blue: #329dfa;
-$sw-yellow: #ffcc33;
 $twitter: #5da8dc;
 /* Style Variables */
 $radius: 5px;
@@ -136,29 +133,27 @@ h1 {
 p {
   line-height: 1.5rem;
 }
-.logo {
-  padding: 20px 0px 40px 0px;
-  img {
-    width: 130px;
-    height: auto;
-  }
-}
 /* Header */
 header {
   nav {
     display: none;
   }
+  .logo {
+    padding: 20px 0px 40px 0px;
+    img {
+      height: auto;
+      width: 130px;
+    }
+  }
 }
 /* Hero */
 #hero {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   .hero-image {
-    background-image: url("../img/hero.png");
-    background-position: center;
-    background-size: cover;
+    background: url("../img/hero.png") center / cover;
     height: 300px;
     width: 100%;
   }
@@ -176,10 +171,10 @@ header {
     line-height: 1.5rem;
   }
   .culture-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 25px 0px;
     article {
       margin-bottom: 15px;
@@ -193,8 +188,8 @@ header {
   }
   .culture-button {
     background: $primary-blue;
-    border-radius: $radius;
     border: 1px solid $primary-blue;
+    border-radius: $radius;
     padding: 15px 0px;
     text-align: center;
     width: 100%;
@@ -218,17 +213,17 @@ header {
 #company-history {
   margin: 50px 0px;
   .timeline-background {
+    background: $light-blue;
+    height: 500px;
     position: relative;
     width: 100%;
-    height: 500px;
-    background: $light-blue;
     z-index: -100;
   }
   .timeline {
+    align-content: center;
     display: flex;
     margin: 50px 0px;
     justify-content: space-between;
-    align-content: center;
     .dates {
       color: $sw-blue;
       display: flex;
@@ -245,8 +240,8 @@ header {
       content: " ";
       height: 500px;
       margin-left: 23px;
-      width: 3px;
       position: absolute;
+      width: 3px;
       z-index: -20;
     }
     .desc {
@@ -269,17 +264,17 @@ header {
     background: url(../img/offices-bg-desktop.png);
     background-size: cover;
     content: " ";
-    position: absolute;
-    width: 100%;
     height: 1000px;
+    position: absolute;
     top: 40px;
+    width: 100%;
     z-index: -100;
   }
   .office-locations {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding-bottom: 75px;
     text-align: center;
     width: 100%;
@@ -302,21 +297,21 @@ header {
 #investors {
   padding-bottom: 75px;
   .investors-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding-top: 40px;
     article {
+      align-items: center;
       background: white;
       border-radius: $radius;
       box-shadow: $shadow;
       display: flex;
+      height: 145px;
       justify-content: space-between;
-      align-items: center;
       margin-bottom: 45px;
       width: 100%;
-      height: 145px;
       img {
         margin: 0 auto;
       }
@@ -325,11 +320,11 @@ header {
 }
 /* Demo */
 #demo {
+  align-items: center;
   background: $sw-blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 50px 0px;
   text-align: center;
   h1 {
@@ -363,11 +358,11 @@ header {
     &:hover {
       background: none;
       box-shadow: $dark-shadow;
-      transition: 2s background;
+      color: white;
+      transition: 2s background, 1s color;
     }
     a:hover {
       color: white;
-      transition: 2s color;
     }
   }
   .white-outline-button {
@@ -383,25 +378,24 @@ header {
     &:hover {
       background: white;
       box-shadow: $dark-shadow;
-      transition: 2s background;
+      transition: 2s background, 1s color;
     }
     a:hover {
       color: $sw-blue !important;
-      transition: 1s color;
     }
   }
 }
 /* Footer */
 footer {
   .footer-content {
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
-    width: 97%;
     font-size: 0.8rem;
     line-height: 1.2rem;
     padding-bottom: 30px;
+    width: 97%;
     article.footer-logo {
       padding-bottom: 40px;
       width: 100%;
@@ -431,35 +425,35 @@ footer {
     }
   }
   .footer-social-media {
-    margin: 10px 0px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    margin: 10px 0px;
     padding-top: 30px;
     text-align: center;
     &::before {
-      position: absolute;
-      content: " ";
       background: $grey;
-      width: 100%;
+      content: " ";
       height: 320px;
       margin-top: 60px;
       padding: 0;
+      position: absolute;
+      width: 100%;
       z-index: -100;
     }
     i {
       border-radius: 25px;
       color: white;
-      margin: 0px 10px;
-      line-height: inherit;
-      width: 25px;
       height: 25px;
+      line-height: inherit;
+      margin: 0px 10px;
       padding: 5px;
+      width: 25px;
     }
     i:hover {
       background: black;
-      transition: 1s background;
+      transition: 1s background, 1s color;
     }
     .fa-facebook-f {
       background: $facebook;
@@ -488,12 +482,9 @@ footer {
     text-align: center;
   }
   .footer-bg-element {
-    background-image: url("../img/waves.png");
-    background-size: cover;
-    background-position: 60% 30%;
-    background-repeat: no-repeat;
-    width: 100%;
+    background: url("../img/waves.png") 60% 30% / cover no-repeat;
     height: 75px;
+    width: 100%;
   }
 }
 /* Tablet Styles */
@@ -506,18 +497,18 @@ footer {
   .logo {
     padding: 25px 0px 50px 0px;
     img {
-      width: 160px;
       height: auto;
+      width: 160px;
     }
   }
   /* Hero */
   #hero {
     .hero-content {
+      align-items: flex-start;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: flex-start;
       .heading {
         width: 260px;
       }
@@ -536,9 +527,9 @@ footer {
       width: 60%;
     }
     .culture-content {
+      align-items: flex-start;
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
       width: 100%;
       article {
         width: 29%;
@@ -546,8 +537,8 @@ footer {
     }
     .culture-button {
       margin: 0 auto;
-      margin-top: 35px;
       margin-bottom: 100px;
+      margin-top: 35px;
       text-align: center;
       width: 170px;
       a {
@@ -573,8 +564,8 @@ footer {
       top: 90px; 
     }
     h1 {
-      padding-top: 40px;
       padding-bottom: 60px;
+      padding-top: 40px;
     }
     .office-locations {
       display: flex;
@@ -600,11 +591,11 @@ footer {
   }
   /* Demo */
   #demo {
-    border-radius: 5px;
-    justify-content: space-around;
     align-items: center;
-    margin: 0px 25px;
+    border-radius: 5px;
     height: 215px;
+    justify-content: space-around;
+    margin: 0px 25px;
     padding-bottom: 30px;
     &::before {
       display: none;
@@ -616,12 +607,12 @@ footer {
       padding: 0;
     }
     .white-button {
-      padding: 10px 25px;
       margin: 0px 10px;
+      padding: 10px 25px;
     }
     .white-outline-button {
-      padding: 10px 25px;
       margin: 0px 20px;
+      padding: 10px 25px;
     }
   }
   /* Footer */
@@ -643,9 +634,9 @@ footer {
       flex-flow: row-reverse nowrap;
       justify-content: space-between;
       &::before {
-        width: 100%;
         height: 225px;
         margin-left: 64px;
+        width: 100%;
       }
       .social-icons {
         display: flex;
@@ -674,15 +665,15 @@ footer {
   }
   /* Header */
   header .content-wrapper {
-    display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     .logo {
       padding: 40px 0px 90px 0px;
       img {
-        width: 190px;
         height: auto;
+        width: 190px;
       }
     }
     nav {
