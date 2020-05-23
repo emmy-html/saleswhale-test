@@ -733,7 +733,6 @@ footer {
         border: 1px solid $primary-blue;
         padding: 15px 30px;
         text-align: center;
-        width: 100%;
         &:hover {
           background: none;
           border: 1px solid $primary-blue;
@@ -752,6 +751,7 @@ footer {
   #hero {
     .content-wrapper {
       aside .hero-image {
+        background-size: 105%;
         border-radius: $radius;
       }
     }
@@ -765,7 +765,6 @@ footer {
         }
       }
       article {
-        margin-top: 0;
         width: 45%;
       }
     }
@@ -788,6 +787,9 @@ footer {
   }
   /* Offices */
   #offices {
+    &::before {
+      top: 60px;
+    }
     .office-locations {
       padding-bottom: 50px;
       justify-content: space-evenly;
@@ -821,6 +823,7 @@ footer {
   /* Footer */
   footer {
     .footer-content {
+      padding-top: 25px;
       article {
         width: 15%;
       }

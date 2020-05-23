@@ -588,8 +588,7 @@ footer .footer-bg-element {
         border-radius: 5px;
         border: 1px solid #0688fa;
         padding: 15px 30px;
-        text-align: center;
-        width: 100%; }
+        text-align: center; }
         header .content-wrapper nav .header-button:hover {
           background: none;
           border: 1px solid #0688fa;
@@ -601,6 +600,7 @@ footer .footer-bg-element {
 
   /* Hero */
   #hero .content-wrapper aside .hero-image {
+    background-size: 105%;
     border-radius: 5px; }
   #hero .hero-content .heading {
     padding: 0;
@@ -609,7 +609,6 @@ footer .footer-bg-element {
       font-size: 3.625rem;
       line-height: 3.875rem; }
   #hero .hero-content article {
-    margin-top: 0;
     width: 45%; }
 
   /* Our Culture */
@@ -624,6 +623,8 @@ footer .footer-bg-element {
     width: 60%; }
 
   /* Offices */
+  #offices::before {
+    top: 60px; }
   #offices .office-locations {
     padding-bottom: 50px;
     justify-content: space-evenly; }
@@ -648,10 +649,12 @@ footer .footer-bg-element {
       padding: 10px 90px; }
 
   /* Footer */
-  footer .footer-content article {
-    width: 15%; }
-  footer .footer-content .divider {
-    display: none; }
+  footer .footer-content {
+    padding-top: 25px; }
+    footer .footer-content article {
+      width: 15%; }
+    footer .footer-content .divider {
+      display: none; }
   footer .footer-social-media::before {
     height: 270px;
     margin-left: 117px; }
